@@ -1,0 +1,12 @@
+{% load static %}
+<?xml encoding="utf-8"?>
+<html>
+    <head>
+        <link href="{% static 'css/common.css' %}" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Привет киноманам!</h1>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

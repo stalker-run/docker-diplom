@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<table>
+    <thead>
+    <tr>
+        <td>Название фильма:</td>
+        <td>Дата выхода:</td>
+        <td>Постер:</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for movie in movies %}
+    <tr>
+        <td>{{ movie.name }}</td>
+        <td>{{ movie.release_date }}</td>
+        <td><img src="{% get_media_prefix %}{{ movie.poster }}" alt="Постер" /></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

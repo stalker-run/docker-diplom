@@ -1,0 +1,11 @@
+# Anon volume
+docker build . -t data
+docker run -it data
+docker ps -a
+docker start -i <container_name>
+
+# Named volume
+docker volume create my_data
+docker build . -t data
+docker run -it --rm -v my_data:/datas data
+docker run -it --rm -v my_data:/datas data

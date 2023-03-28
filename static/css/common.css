@@ -1,0 +1,12 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+td, th {
+    border: 1px solid black;
+    padding: 15px;
+    vertical-align: top;
+    text-align: left;
+}
+th, thead {
+    background-color: aqua;
+}
